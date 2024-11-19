@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="E-commerce Page.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Store</h1>
+            <p>Explore our exclusive collection and shop your favorites!</p>
+        </header>
+        <div id="page-content">
+            <!-- Main Product Page -->
+            <div id="products" class="products-grid"></div>
+
+
+            <!-- Product Details Page -->
+            <div id="product-details" class="product-details hidden">
+                <button class="back-btn" onclick="showProducts()">← Back to Products</button>
+                <div id="product-info"></div>
+            </div>
+        </div>
+
+
+        <section class="cart-section">
+            <h2>Shopping Cart</h2>
+            <div id="cart" class="cart">
+                <p>Your cart is empty.</p>
+            </div>
+            <div class="total">
+                <strong>Total: $<span id="total-cost">0.00</span></strong>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Store. All rights reserved.</p>
+    </footer>
+    <script src="E-commerce Page.js"></script>
+</body>
+
+</html>

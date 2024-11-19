@@ -1,0 +1,18 @@
+button{
+    padding: 20px;
+    background-color: rgb(234, 7, 45);
+    border: 1px solid #333;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+
+#hoverDiv {
+  padding: 20px;
+  background-color: lightgray;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}

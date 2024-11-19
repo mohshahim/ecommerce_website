@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+
+    
+    <h1>Original Heading</h1>
+
+   
+    <p class="example-paragraph">Original paragraph content.</p>
+
+   
+    <ul id="example-list">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+
+    
+    <script>
+        
+        let heading = document.getElementsByTagName("h1")[0]; 
+        heading.textContent = "Updated Heading Text"; 
+
+        let paragraph = document.getElementsByClassName("example-paragraph")[0]; 
+        paragraph.textContent = "Updated paragraph content."; 
+
+        let unorderedList = document.getElementById("example-list");
+        unorderedList.style.backgroundColor = "lightblue"; 
+
+        
+        let listItems = unorderedList.getElementsByTagName("li");
+        for (let i = 0; i < listItems.length; i++) {
+            listItems[i].style.color = "green"; 
+            listItems[i].textContent = `Updated ${listItems[i].textContent}`; 
+        }
+    </script>
+
+</body>
+</html>

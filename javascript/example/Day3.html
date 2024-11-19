@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits = ["Apple","Banana","cherry"];
+      
+
+        let vegetables = [];
+        vegetables.push("Carrot","spinach","Broccoli");
+        console.log(vegetables);
+
+        fruits.push("Mango");
+        console.log(fruits);
+
+        let lastfruit = fruits.pop();
+        console.log(lastfruit);
+
+        delete fruits[1]
+        console.log(fruits);
+
+        fruits.unshift("grapes");
+        console.log(fruits);
+
+        let fruits2 = [ "Apple","Banana","cherry"];
+        fruits2.copyWithin(0, fruits2.length - 2);
+        console.log(fruits2);
+
+        let numbers = [1,2,3,4,5];
+        
+
+        numbers.push(6);
+        console.log(numbers);
+
+        let num = numbers.shift();
+        console.log(num);
+
+        delete numbers[2]
+        console.log(numbers);
+
+
+        //
+        let arr = [[1,2],[3,4],[5,6]];
+        let newarr = arr.flat();
+        console.log(newarr);
+
+       
+        let doubled = newarr.map(num => num * 10);
+        console.log(doubled);
+
+
+        const colors = ["red", "green", "blue", "yellow"];
+        const index = colors.indexOf("green");
+
+         if (index !== -1) {
+           colors.splice(index, 1);
+           }
+
+             console.log(colors);
+
+             colors.splice(2,0 ,"purple", "orange");
+             console.log(colors);
+
+             const arry = ["Jan", "Feb", "Mar", "Apr", 1, 2, 3];
+             const numericValues = arry.filter(item => typeof item === 'number');
+
+             console.log(numericValues);
+
+
+             let fruitss = ['apple', 'banana', 'cherry', 'apple', 'orange',
+             'banana', 'grape'];
+             console.log(fruitss)
+             let firstBananaIndex = fruitss.indexOf('banana');
+             console.log(firstBananaIndex);
+
+             let lastindexBanana = fruitss.lastIndexOf('banana');
+             console.log(lastindexBanana);
+
+             let oran = fruitss.includes("orange");
+             console.log(oran);
+
+             let largefruit = fruitss.find( function(fruit){
+                return  fruit = fruitss.length > 5
+             });
+             console.log(largefruit);
+
+             let startsc = fruitss.findIndex(fruit => fruit.startsWith('c'));
+             console.log(startsc);
+
+             let lastAFruit = fruitss.slice().reverse().find(fruit => fruit.includes('a'));
+            console.log(lastAFruit);
+ 
+    </script>
+</body>
+</html>

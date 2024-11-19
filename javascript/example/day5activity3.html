@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Section Example</title>
+</head>
+<body>
+
+    <div id="content"></div>
+
+    <button onclick="createSection()">Add New Section</button>
+    <button onclick="removeSection()">Remove Section</button>
+
+    <script>
+        function createSection() {
+
+            const section = document.createElement("section");
+
+            section.className = "new-section";
+
+            const heading = document.createElement("h2");
+            heading.textContent = "New Section";
+
+            const paragraph = document.createElement("p");
+            paragraph.textContent = "This is a dynamically added section.";
+
+            section.appendChild(heading);
+            section.appendChild(paragraph);
+
+            const contentDiv = document.getElementById("content");
+            if (contentDiv) {
+                contentDiv.appendChild(section);
+            } else {
+                console.error('Element with id "content" not found.');
+            }
+        }
+
+        function removeSection() {
+
+        const contentDiv = document.getElementById("content");
+
+        const sections = contentDiv.getElementsByClassName("new-section");
+
+        if (sections.length > 0) {
+            contentDiv.removeChild(sections[sections.length - 1]);
+        } else {
+            console.log("No section with class 'new-section' found to remove.");
+        }
+}
+
+    </script>
+</body>
+</html>

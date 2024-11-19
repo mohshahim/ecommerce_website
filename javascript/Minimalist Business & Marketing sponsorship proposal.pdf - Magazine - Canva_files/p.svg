@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN'
+          'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg height="308" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" viewBox="0 0 308 308" width="308" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+><defs
+  ><clipPath id="a"
+    ><path d="M0 0V210H236V0Z"
+    /></clipPath
+    ><clipPath clip-path="url(#a)" id="b"
+    ><path d="M-376 210H236V-582H-376Zm0 0"
+    /></clipPath
+    ><clipPath clip-path="url(#b)" id="c"
+    ><path d="M-376-582H236V210H-376Zm0 0"
+    /></clipPath
+    ><clipPath clip-path="url(#c)" id="d"
+    ><path d="M-376-582H236V210H-376Zm0 0"
+    /></clipPath
+    ><clipPath clip-path="url(#d)" id="e"
+    ><path d="M0 0H308V308H0ZM0 0"
+    /></clipPath
+    ><clipPath clip-path="url(#e)" id="f"
+    ><path d="M154 0C68.95 0 0 68.95 0 154S68.95 308 154 308s154-68.95 154-154S239.05 0 154 0Zm0 0"
+    /></clipPath
+  ></defs
+  ><g
+  ><g fill="#F2C744" stroke="#F2C744" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.5"
+    ><path clip-path="url(#f)" d="M0 0H308V308H0ZM0 0" stroke="none"
+    /></g
+  ></g
+></svg
+>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover and Key Press Example</title>
+  <link rel="stylesheet" href="inline.css">
+</head>
+<body>
+
+  <div id="hoverDiv">Hover over me!</div>
+
+  <textarea id="keyTextArea" placeholder="Press any key..."></textarea>
+
+  <p id="keyCodeDisplay"></p>
+
+  <script>
+    const hoverDiv = document.getElementById("hoverDiv");
+    const keyTextArea = document.getElementById("keyTextArea");
+    const keyCodeDisplay = document.getElementById("keyCodeDisplay");
+
+    hoverDiv.onmouseover = function() {
+      hoverDiv.style.backgroundColor = "red";
+    };
+
+    hoverDiv.onmouseout = function() {
+      hoverDiv.style.backgroundColor = "lightgray";
+    };
+
+    keyTextArea.onkeydown = function(event) {
+      keyCodeDisplay.textContent = "Key code: " + event.keyCode;
+    };
+  </script>
+
+</body>
+</html>

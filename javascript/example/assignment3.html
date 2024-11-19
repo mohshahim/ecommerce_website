@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Attributes Example</title>
+</head>
+<body>
+
+    <div id="content">
+
+        <section class="new-section">
+            <h2>Existing Section</h2>
+            <p>This is the first paragraph in the first section.</p>
+        </section>
+    </div>
+
+
+    <div data-user-id="456" data-role="user">User Profile</div>
+
+
+    <button onclick="insertHeadingBefore()">Insert Heading Before Paragraph</button>
+
+    <button onclick="modifyAttributes()">Modify Attributes</button>
+
+
+<script>
+        function insertHeadingBefore() {
+
+            const contentDiv = document.getElementById("content");
+
+
+            const firstSection = contentDiv.querySelector("section");
+
+            if (firstSection) {
+
+                const firstParagraph = firstSection.querySelector("p");
+
+                if (firstParagraph) {
+
+                    const newHeading = document.createElement("h3");
+                    newHeading.textContent = "Inserted Heading";
+
+
+                    firstSection.insertBefore(newHeading, firstParagraph);
+                } else {
+                    console.log("No paragraph found in the first section.");
+                }
+            } else {
+                console.log("No section found in the content div.");
+            }
+        }
+
+        function modifyAttributes() {
+
+            const firstSection = document.querySelector("section.new-section");
+
+            if (firstSection) {
+
+                firstSection.id = "main-section";
+
+
+                const firstParagraph = firstSection.querySelector("p");
+
+                if (firstParagraph) {
+
+                    firstParagraph.className = "highlighted-text";
+
+
+                    console.log("Section ID:", firstSection.id);
+                    console.log("Paragraph Class:", firstParagraph.className);
+                } else {
+                    console.log("No paragraph found in the first section.");
+                }
+            } else {
+                console.log("No section with the class 'new-section' found.");
+            }
+
+
+            const userElement = document.querySelector('[data-user-id="456"]');
+
+            if (userElement) {
+
+                userElement.dataset.role = "admin";
+
+                console.log("Updated User Role:", userElement.dataset.role);
+            } else {
+                console.log('No user found with data-user-id="456".');
+            }
+        }
+    </script>
+</body>
+</html>

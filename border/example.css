@@ -1,0 +1,96 @@
+h1{
+    color: red;
+    text-align: center;
+}
+
+header{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+body{
+    background-color: #3b5998;
+  }  
+
+  @media screen and (max-width: 450px) {
+    body{
+      background-color: lightgreen;
+    }  
+  }   
+
+
+#div{
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    border-radius: 10px;
+    transition:width 2s, height 4s ;
+}
+
+#div:hover{
+    background-color: #2ecc71;
+    transform: scale(1.2);
+    transform: rotate(-45deg);
+} 
+
+
+#div2{
+    font-size: 2em;
+    height: 120px;
+    width: 120px;
+    border: 30px dashed gray;
+    transform: translate(50px,100px);
+}
+
+#div3{
+    text-align: center;
+    background-color: rgb(93, 204, 204, 0.7); 
+    height: 120px;
+    width: 120px;
+    border: 30px double green;
+    transform: skew(20deg, 45deg);
+}
+
+  .box{
+    width: 300px;
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 400px;
+    background-color: blue;
+    border-top: 10px dotted black;
+    border-bottom: 10px  black;
+  }
+
+  #div4{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+  #div5{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: ani;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  @keyframes ani{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Example</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body>
+
+    <div class="box" id="box">Original Text</div>
+
+    <p class="description">This is some placeholder text in the description paragraph.</p>
+
+    <button id = "button1">Change Text</button>
+    <button id = "button2">Toggle Class and Style</button>
+
+    <script> 
+
+        function changeText() {
+            document.getElementById("box").textContent = "Text has been changed!";
+         }
+
+        function toggleClass() {
+            document.getElementById("box").classList.toggle("highlighted");
+        }
+
+        document.getElementById("button1").addEventListener("click",changeText);
+        document.getElementById("button2").addEventListener("click",toggleClass); 
+    </script>
+
+</body>
+</html>

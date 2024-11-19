@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [5, 10, 15, 20, 25, 30, 35, 40];
+
+
+        let total = 0;
+
+
+        for (let i = 0; i < arr.length; i++) {
+        total += arr[i];  
+        }
+
+        const average = total / arr.length;
+
+
+        console.log("The average is:" , average);
+
+
+        const originalPrices = [100, 150, 250, 300, 350, 420];
+        const disprice = [];
+
+        let i = 0;
+
+
+    while (i < originalPrices.length) {
+    const discprice = originalPrices[i] * 0.75; 
+    disprice.push(discprice);
+    i++;
+    }
+  
+    console.log(disprice);
+
+    function countVowels(str) {
+       
+    
+    const vowels = "aeiouAEIOU";
+    
+    let vowelCount = 0;
+    
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            vowelCount++;
+        }
+    }
+    
+    return vowelCount;
+    }
+
+
+const inputString = "shahim";
+console.log("Number of vowels:", countVowels(inputString));
+
+
+const vowelcount= (str)=>{
+    const vowels = "aeiouAEIOU";
+    let vowelCount = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            vowelCount++;
+        }
+    }
+
+    return vowelCount;
+}
+const inputString2 = "Hello World ";
+console.log("Number of vowels:", vowelcount(inputString2));
+
+
+const num = [1,2,3];    
+num.forEach(function(Number){
+
+    return console.log(Number * Number);
+});
+
+function calculatedArea(l,b){
+return l*b;
+}
+
+const len = 5;
+const bre = 10;
+console.log(calculatedArea(len , bre));
+
+</script>
+</body>
+</html>
